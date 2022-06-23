@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+    <html lang="zh-tw繁體中文">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CatffeeWEB</title>
+            <!--favicon-->
+            <link href="./img/webview-01.png" rel="icon">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- 連接Bootstrap -->
+            <linK href="./style.css" rel="stylesheet"><!--連結css-->
+        
+        </head>
+<body>
+    <div id="nav-wrap">
+        <div id="scroller-anchor"></div> 
+            <div class="menu" id="nav"><!--nav製作-->
+                <a href="#" class="brand-logo"><img src="./img/catffee_logo.png"></a>
+                <!--class="clearfix"是用在清除浮動元素,這裡因為nav的位置是fixed所以不適用,可以參考bootstrap的文件有詳細說明-->
+                <ul class="nav-wrapper">
+                    <li class="nav-btn"><a href="#">首頁</a></li>
+                    <li class="nav-btn" ><a href="#function">功能</a></li>
+                    <!-- 要做點擊滾動是寫在a的href<li class="nav-btn" data-row-id="row2">吉祥物</li> -->
+                    <li class="nav-btn"><a href="#pet">吉祥物</a></li>
+                    <li class="nav-btn"><a href="#team">團隊</a></li>
+                </ul>
+            </div>
+    </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true"><!--輪播-->
+               <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
+                <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/car_01.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/car_02.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/car_03.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/car_04.png" class="d-block w-100" alt="...">
+                      </div>
+                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+    <div class="background-img"> 
+      <div class="container"> 
+        <!--catffee功能-->
+        <div class="container01" >
+          <div id="function"></div>
+            <div class="row-btn"><div class="circle"></div></div>
+            <h2 class="subtitle">Caffee功能</h2><!--catffee內容-->
+            <div class="catffeeintro">
+              <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <img src="./img/1-1-1.png">
+                  </div>
+                  <div class="tab-pane" id="pills-second" role="tabpanel" aria-labelledby="pills-second-tab">
+                      <img src="./img/1-1-2.png">
+                  </div>
+                  <div class="tab-pane" id="pills-third" role="tabpanel" aria-labelledby="pills-third-tab">
+                      <img src="./img/1-1-3.png">
+                  </div>
+                  <div class="tab-pane" id="pills-forth" role="tabpanel" aria-labelledby="pills-forth-tab">
+                      <img src="./img/1-1-4.png">
+                  </div>
+              </div>
+              
+              <ul class="nav_nav-pills_mb-3" id="pills-tab" role="tablist">
+                  <div>
+                      <h3>首頁</h3>
+                      <p>各地最熱門的貓咪咖啡廳一覽而盡，將貓主子加入摯愛帶你進入貓咪咖啡廳的小小宇宙。</p>
+                  </div>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                     北部
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-second-tab" data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab" aria-controls="pills-second" aria-selected="false">
+                     中部
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-third" aria-selected="false">
+                     南部
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-forth-tab" data-bs-toggle="pill" data-bs-target="#pills-forth" type="button" role="tab" aria-controls="pills-forth" aria-selected="false">
+                      東部
+                      </button>
+                   </li>
+              </ul>
+            </div>
+  
+            <div class="catffeeintro">
+              <ul class="nav_nav-pills_mb-3" id="pills-tab" role="tablist">
+                  <div>
+                      <h3>貓咖地圖</h3>
+                      <p>涵蓋北、中、南、東四大區的貓咪咖啡廳搜尋頁，以四隻厭世貓咪組合成台灣地圖，不同角度的厭世貓咪讓台灣地圖添增一風味。</p>
+                  </div>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link active" id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1" aria-selected="true">
+                     台灣貓
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-second1-tab" data-bs-toggle="pill" data-bs-target="#pills-second1" type="button" role="tab" aria-controls="pills-second1" aria-selected="true">
+                     北部貓
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-third1-tab" data-bs-toggle="pill" data-bs-target="#pills-third1" type="button" role="tab" aria-controls="pills-third1" aria-selected="false">
+                     中部貓
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-forth1-tab" data-bs-toggle="pill" data-bs-target="#pills-forth1" type="button" role="tab" aria-controls="pills-forth1" aria-selected="false">
+                     南部貓
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-fifth1-tab" data-bs-toggle="pill" data-bs-target="#pills-fifth1" type="button" role="tab" aria-controls="pills-fifth1" aria-selected="false">
+                      東部貓
+                      </button>
+                   </li>
+              </ul>
+  
+              <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home1-tab">
+                      <img src="./img/2-1.png">
+                  </div>
+                  <div class="tab-pane" id="pills-second1" role="tabpanel" aria-labelledby="pills-second1-tab">
+                      <img src="./img/2-1-1.png">
+                  </div>
+                  <div class="tab-pane" id="pills-third1" role="tabpanel" aria-labelledby="pills-third1-tab">
+                      <img src="./img/2-1-2.png">
+                  </div>
+                  <div class="tab-pane" id="pills-forth1" role="tabpanel" aria-labelledby="pills-forth1-tab">
+                      <img src="./img/2-1-3.png">
+                  </div>
+                  <div class="tab-pane" id="pills-fifth1" role="tabpanel" aria-labelledby="pills-fifth1-tab">
+                      <img src="./img/2-1-4.png">
+                  </div>
+              </div>
+            </div>
+  
+            <div class="catffeeintro">
+              <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home2-tab">
+                      <img src="./img/2-2-1.png">
+                  </div>
+                  <div class="tab-pane" id="pills-second2" role="tabpanel" aria-labelledby="pills-second2-tab">
+                      <img src="./img/2-2-2.png">
+                  </div>
+                  <div class="tab-pane" id="pills-third2" role="tabpanel" aria-labelledby="pills-third2-tab">
+                      <img src="./img/2-2-3.png">
+                  </div>
+                  <div class="tab-pane" id="pills-forth2" role="tabpanel" aria-labelledby="pills-forth2-tab">
+                      <img src="./img/2-2-4.png">
+                  </div>
+              </div>
+              
+              <ul class="nav_nav-pills_mb-3" id="pills-tab" role="tablist">
+                  <div>
+                      <h3>貓咖店家列表</h3>
+                      <p>由地圖進入後，詳列台灣四大地區貓咖所在，帶領你一同進入被貓咪包圍的幸福世界。</p>
+                  </div>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link active" id="pills-home2-tab" data-bs-toggle="pill" data-bs-target="#pills-home2" type="button" role="tab" aria-controls="pills-home2" aria-selected="true">
+                     北部
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-second2-tab" data-bs-toggle="pill" data-bs-target="#pills-second2" type="button" role="tab" aria-controls="pills-second2" aria-selected="false">
+                     中部
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-third2-tab" data-bs-toggle="pill" data-bs-target="#pills-third2" type="button" role="tab" aria-controls="pills-third2" aria-selected="false">
+                     南部
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-forth2-tab" data-bs-toggle="pill" data-bs-target="#pills-forth2" type="button" role="tab" aria-controls="pills-forth2" aria-selected="false">
+                      東部
+                      </button>
+                   </li>
+              </ul>
+            </div>
+  
+            <div class="catffeeintro">
+              <ul class="nav_nav-pills_mb-3" id="pills-tab" role="tablist">
+                  <div>
+                      <h3>貓咖店家詳情</h3>
+                      <p>細數每一間貓咪咖啡廳的獨家特色，並提供各項詳細資訊，包含聯絡資訊、貓店長介紹以及諸位貓奴同胞們對於這間貓咖的印象評分與評語。</p>
+                  </div>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link active" id="pills-home3-tab" data-bs-toggle="pill" data-bs-target="#pills-home3" type="button" role="tab" aria-controls="pills-home3" aria-selected="true">
+                     簡介
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-second3-tab" data-bs-toggle="pill" data-bs-target="#pills-second3" type="button" role="tab" aria-controls="pills-second3" aria-selected="false">
+                     聯絡
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-third3-tab" data-bs-toggle="pill" data-bs-target="#pills-third3" type="button" role="tab" aria-controls="pills-third3" aria-selected="false">
+                     貓店長
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-forth3-tab" data-bs-toggle="pill" data-bs-target="#pills-forth3" type="button" role="tab" aria-controls="pills-forth3" aria-selected="false">
+                      評價
+                      </button>
+                   </li>
+              </ul>
+  
+              <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane active" id="pills-home3" role="tabpanel" aria-labelledby="pills-home3-tab">
+                      <img src="./img/2-2-5.png">
+                  </div>
+                  <div class="tab-pane" id="pills-second3" role="tabpanel" aria-labelledby="pills-second3-tab">
+                      <img src="./img/2-2-6.png">
+                  </div>
+                  <div class="tab-pane" id="pills-third3" role="tabpanel" aria-labelledby="pills-third3-tab">
+                      <img src="./img/2-2-7.png">
+                  </div>
+                  <div class="tab-pane" id="pills-forth3" role="tabpanel" aria-labelledby="pills-forth3-tab">
+                      <img src="./img/2-2-8.png">
+                  </div>
+              </div>
+            </div>
+  
+            <div class="catffeeintro">
+              <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane active" id="pills-home4" role="tabpanel" aria-labelledby="pills-home4-tab">
+                      <img src="./img/4-1-1.png">
+                  </div>
+                  <div class="tab-pane " id="pills-second4" role="tabpanel" aria-labelledby="pills-second4-tab">
+                      <img src="./img/4-2-1.png">
+                  </div>
+                  <div class="tab-pane " id="pills-third4" role="tabpanel" aria-labelledby="pills-third4-tab">
+                      <img src="./img/4-3.png">
+                  </div>
+              </div>
+              
+              <ul class="nav_nav-pills_mb-3" id="pills-tab" role="tablist">
+                  <div>
+                      <h3>貓咖搜尋及篩選</h3>
+                      <p>透過搜尋及不同條件的篩選，協助你更快的找到心儀的貓咪咖啡廳。</p>
+                  </div>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link active" id="pills-home4-tab" data-bs-toggle="pill" data-bs-target="#pills-home4" type="button" role="tab" aria-controls="pills-home4" aria-selected="true">
+                     搜尋
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-second4-tab" data-bs-toggle="pill" data-bs-target="#pills-second4" type="button" role="tab" aria-controls="pills-second4" aria-selected="false">
+                     篩選
+                     </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="pills-third4-tab" data-bs-toggle="pill" data-bs-target="#pills-third4" type="button" role="tab" aria-controls="pills-third4" aria-selected="false">
+                     篩選結果
+                     </button>
+                  </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!--吉祥物介紹-->
+        <div class="container01" >
+          <div id="pet"></div>
+          <div class="row-btn"><div class="circle"></div></div>
+          <h2 class="subtitle">吉祥物介紹</h2>
+              <div class="catffeerole">
+                <!--with caption-->
+                      <div
+                        id="carouselExampleCaptions"
+                        class="carousel slide"
+                        data-bs-ride="false"
+                      >
+                      <!--carousel-indicators這個class名稱不能更動,是bootstrap定義的樣式-->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="button01 active" aria-current="true"
+                            aria-label="Slide 1">
+                          </button>
+                          <button class="button02"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2">
+                            
+                          </button>
+                          <button class="button03"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                          >
+                          <button class="button04"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                          >
+                        </div>
+
+                        <div class="carousel-inner inner-box">
+
+                          <div class="carousel-item active ">
+                            <div class="carousel-box">
+                                <img 
+                                src="./img/northcat_150px_01.png"
+                                class="d-block"
+                                alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>北部貓貓</h5>
+                                  <p>
+                                    北部上班族貓貓，每天為了賺更多罐罐努力在貓咪咖啡廳上班，是店裡的招牌貓貓，今天也要努力上班！
+
+                                      喜歡的食物：肉泥!!!
+                                      怪癖：吃肉泥的時候表情會特別猙獰，醜到大家都很喜歡餵牠吃肉泥。
+                                  </p>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="carousel-box">
+                                <img
+                                src="./img/centralcat_150px_02.png"
+                                class="d-block"
+                                alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>中部貓貓</h5>
+                                  <p>
+                                    中部地頭貓，控制著中部所有貓咪咖啡廳，住在超豪華大樓的最頂樓，其實底下有一票的貓貓小弟。
+
+                                    喜歡的食物：法國進口高級貓罐頭
+                                    怪癖：喜歡坐在一張超大的辦公椅上，一定要放上紅色的軟綿綿墊子，可以在上面待一整天。
+                                  </p>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <div class="carousel-box">
+                                <img
+                                src="./img/southcat_150px_03.png"
+                                class="d-block"
+                                alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>南部貓貓</h5>
+                                  <p>
+                                    南部海邊餐廳裡的貓貓，每天都覺得好熱，但又很喜歡看海邊的正妹，都只會靠近正妹討摸，男的一律掰掰。
+
+                                    喜歡的食物：西瓜
+                                    怪癖：正中午會跑去餐廳的電風扇前吹一整個下午，視線永遠朝著海邊。
+                                  </p>
+                                </div>
+                            </div>
+                            
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <div class="carousel-box">
+                                <img
+                                src="./img/westcat_150px_04.png"
+                                class="d-block"
+                                alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>東部貓貓</h5>
+                                  <p>
+                                    東部野味貓，村子裡的人都很好，養成了他笨笨到處討處蹭吃蹭喝的習慣，會在田間巡邏跟阿公阿罵探班。
+
+                                    喜歡的食物：都吃都好吃
+                                    怪癖：喜歡抓麻雀給大家當禮物，抓到技術很好會鬥雞眼。
+                                  </p>
+                                </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                       
+                      </div>
+                  </div>
+              </div>
+    </div>
+    <!--團隊介紹-->
+    <div>
+    <div class="container01" >
+      <div id="team"></div>
+      <div class="container">
+            <div class="row-btn"><div class="circle"></div></div>
+              <h2 class="subtitle">團隊介紹</h2>
+                  <div class="name">
+                        <img src="./img/intro_Teng.png" alt="photo intro">
+                        <ul>
+                            <li>
+                            <h3>鄧潔筠</h3>
+                            在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
+                            </li>
+                        </ul>
+                  </div>
+                  <div class="name">
+                        <img src="./img/intro_go.png" alt="photo intro">
+                        <ul>
+                          <li>
+                            <h3>勾彧萱</h3><!--要換照片和字-->
+                            好想要回瑞芳，去侯硐吸爆貓貓。
+                          </li>
+                        </ul>
+                  </div>
+                  <div class="name">
+                      <img src="./img/intro_en.png" alt="photo intro">
+                      <ul>
+                          <li>
+                              <h3>蕭嘉恩</h3><!--要換照片和字-->
+                              駐紮在北部的南部吸貓人，在catffee學院中喜歡將所有沒對齊的東西對齊的強迫症擔當。
+                          </li>
+                      </ul>
+                  </div>
+      </div>
+    </div>
+</div>
+        <footer class="colorfooter">
+            <div class="containerfooter">
+              <div class="contact">
+                <h2 class="subTitle" >CATFFEE</h2>
+                <ul >
+                    <li>Mail：chiehyun.tw@gmail.com
+                    </li>
+                    <li>Phone：0910123456
+                    </li>
+                    <li>© 2022 Devsisters Corp. All Rights Reserved.
+                    </li>
+                </ul>
+                </div>
+                <hr>
+              <div class="footer-link">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/" ><img class="img" src="img/facebook.png" alt="相片"></a>
+                    <a href="https://www.instagram.com/"><img class="img" src="img/instagram-alt.png" alt="相片"></a>
+                    <a href="https://line.me/zh-hant/"><img class="img" src="./img/line.png" alt="相片"></a>
+                </li>
+
+                </ul>
+              </div>
+           </div>
+        </footer>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="js/navrow.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- JavaScript Bundle with Popper -->
+</body>
+</html>

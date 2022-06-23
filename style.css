@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*不要更動上面是取消預設值*/
+
+
+#carouselExampleIndicators{
+    margin-top: 67px;
+}
+
+/*導覽列*/
+
+.menu{
+    background-color: #FCD3A9;
+    position: fixed;
+    width: 100vw;
+    height: 67px;
+    top:0;
+	left:0;
+	width:100%;
+	z-index:100;
+    box-shadow: -1px 4px 7px 3px rgb(173 163 163/40%);
+}
+.menu:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+}
+.brand-logo{
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+img{
+    width: 119px;
+    margin: 11.5px 0;
+}
+.brand-logo img{
+    margin: 0;
+}
+.nav-wrapper{
+    height: 67px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-wrapper a{
+     text-decoration:none
+}
+
+.nav-wrapper li{
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+    font-weight:bold;
+    margin-top: 21px;
+    padding: 0 30px;
+}
+
+
+#nav-indicator{
+	position:absolute;
+    margin-left: 50px;
+	width:89px;
+	top:55px;
+	left:0;
+	height:5px;
+	background:#6C8DE4;	
+	
+	-webkit-transition: all 0.2s ease;
+	-moz-transition:    all 0.2s ease;
+	-o-transition:      all 0.2s ease;
+	-ms-transition:     all 0.2s ease;
+	transition:         all 0.2s ease;
+}
+/*不是寫在nav-btn,是nav-btn a*/
+.nav-btn a{
+    color: #5170c3;
+}
+.nav-btn a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+/*這邊跟你們的figma不太一樣，所以先註解掉*/
+/*.nav-btn:hover, .nav-btn.active {
+    /* color: #747c93;
+    background: #e7c6a5; }*/
+
+
+
+#function:target,#pet:target,#team:target{
+    padding-top: 67px; 
+    margin-top: -67px;
+}
+
+/*倫波*/
+
+#carouselExampleIndicators img{
+   margin: 0; 
+}
+
+.carousel-indicators .active{
+    /*background-color: #6C8DE4*/
+    background-color: #6C8DE4;
+}
+
+
+/*catffee功能*/
+.background-img{
+    background-image: url(./img/bg02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+
+
+}
+
+
+
+.catffeeintro{
+    display: block;
+    padding: 80px 0; 
+    width: 80%;
+    margin: auto;
+}
+.nav_nav-pills_mb-3{
+    display: inline-block;
+    vertical-align: middle;
+    width: 38%;
+    padding: 0;
+}
+
+.nav_nav-pills_mb-3 h3{    
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.nav_nav-pills_mb-3 p{
+    color:#757575;
+    margin-bottom: 20px;
+}
+
+.tab-content{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    text-align: center;
+}
+.tab-content img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.nav-item{
+    display: inline-block;
+}
+.nav-link{
+    color: #6C8DE4;
+    background-color: #FFE3C1;
+    border: none;
+    margin-top: 10px;
+    padding: 5px 15px;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+.nav-item button.active{
+    background-color: #6C8DE4;
+    color: #ffffff;
+}
+.nav-item button:hover{
+    color: #ffffff;
+}
+
+
+
+/*吉祥物介紹*/
+
+/*indicator*/
+#carouselExampleCaptions{
+    display: flex;
+    min-height: 400px;
+    width: 80%;
+    margin: auto;
+}
+#carouselExampleCaptions .carousel-indicators [data-bs-target] {
+    display: block;
+}
+
+#carouselExampleCaptions .carousel-indicators {
+    display: block;
+}
+
+#carouselExampleCaptions .carousel-indicators .active {
+    transform: scale(1.5);
+    /*變大的時候0.5秒漸出*/
+    transition: ease 0.5s;
+    box-shadow: 0 0 5px rgba(137, 137, 137, 0.3);
+}
+
+#carouselExampleCaptions .carousel-indicators{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#carouselExampleCaptions .carousel-item img{
+    width : 100%;
+    max-width: 500px;
+}
+/*輪播的按鈕大小同樣樣式寫在一起,只要修改就可以一起改變*/
+#carouselExampleCaptions button{
+    /*現在的default狀態有點大,先調小一點*/
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #FCD3A9;
+    /*設定背景大小等比例滿版以及背景不重複*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.button01{    
+    background-image: url("./img/northcat01.png"); 
+}
+.button02{
+    background-image: url("./img/centralcat02.png");
+}
+.button03{
+    background-image: url("./img/southcat03.png");
+}
+
+.button04{
+    background-image: url("./img/westcat04.png");
+}
+.carousel-caption h5{
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.carousel-caption{
+    color: #757575;
+    position: unset;
+    text-align: left;
+}
+
+#carouselExampleCaptions .carousel-box{
+    display: flex;
+    align-items: center;
+}
+
+#carouselExampleCaptions .inner-box{
+    /*top,left,right,bottom只有在position:absolute或fixed的時候才使用*/
+    /* left: 150px;
+    height: 400px; */
+    width:70%;
+    margin: auto 0 auto auto;
+    vertical-align: middle;
+} 
+
+
+/*團隊介紹*/
+
+.name{
+    /* 套bootstrap container就可以自動左右縮放,不用再定義margin,避免跑版margin: 10% 35%; */
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+}
+.name:last-child{
+    padding-bottom: 0;
+}
+.name::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.name h3{
+    font-weight: 600;
+    font-size: 22px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.name ul{
+    margin: 0%;
+    width: calc(100% - 200px);
+    display: inline-block;
+    vertical-align: middle;
+}
+.name img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.name ul li{
+    list-style: none;
+    color: #757575;
+}
+
+/*footer*/
+
+.colorfooter{
+    background-color: #FCD3A9;
+
+}
+
+.containerfooter{
+	color: #ffffff;
+	font-size: 14px;
+    font-weight:400;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 41px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.contact{
+    padding: 30px 0;
+}
+
+
+.img{
+    width: 3%;
+}
+
+.containerfooter li{
+    list-style: none;
+}
+
+hr{
+    border-top: 2px solid;
+    opacity: .60;
+}
+
+
+
+
+
+
+/*跨區域多個共用*/
+
+.container01{
+    margin-top: 100px;   
+    margin-bottom: 112px; 
+}
+
+
+
+.subtitle{
+    color: #6C8DE4;
+    text-align: center;
+    font-weight: 600; 
+    font-size: 32px;
+	line-height: 45px;
+	border-bottom:  8px solid #FCD3A9;
+	margin: 0 auto 50px;
+	width: 200px;
+	padding-top: 24px;
+}
+
+  /*ANIMATION*/
+.row-btn, .circle, .row{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition:    all 0.1s ease;
+	-o-transition:      all 0.1s ease;
+	-ms-transition:     all 0.1s ease;
+	transition:         all 0.1s ease;	
+}
